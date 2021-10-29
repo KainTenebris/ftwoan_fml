@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <title>Gamedev Canvas Workshop</title>
+    <title>ftwoan fml</title>
     <style>
-    	* { padding: 0; margin: 0; }
-    	canvas { background: #eee; display: block; margin: 0 auto; }
+        * {
+            position: absolute;
+        }
+        
+        #player {
+            width: 20px;
+            float: right;
+            background-color: rgb(53, 182, 60);
+            height: 20px;
+        }
+        
+        #player_icon {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            width: 120px;
+            float: bottom;
+            background-color: rgb(53, 182, 60);
+            height: 120px;
+        }
+        
+        #grey {
+            position: fixed;
+            bottom: 0%;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            background-color: black;
+            opacity: 0.5;
+            visibility: hidden;
+        }
+        
+        #menu {
+            position: fixed;
+            bottom: 10%;
+            top: 10%;
+            left: 10%;
+            right: 10%;
+            background-color: #004400;
+            visibility: hidden;
+        }
     </style>
 </head>
+
 <body>
+    <div id="map"></div>
+    <div id="player_icon"></div>
 
-<canvas id="myCanvas" width="480" height="320"></canvas>
+    <div id="grey"></div>
+    <div id="menu"></div>
 
-<script>
-	// JavaScript code goes here
-</script>
+    <script src="menu.js"></script>
+    <script src="engine.js"></script>
 
 </body>
+
 </html>
